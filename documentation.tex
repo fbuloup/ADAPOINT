@@ -118,10 +118,10 @@ Un schéma de principe global, puis le détail de chaque liaison : type de câbl
 		\item ClosedTarget
 	\end{itemize}
 	\item \textbf{Boîtier relais photodiodes} : commande des cibles
-	\item \textbf{Alimentation AL 841B} : alimentation 4,5V des cibles
+	\item \textbf{Alimentation AL 841B} : alimentation 4.5V des cibles
 	\item \textbf{Electro-aimant} pour position initiale
 	\item \textbf{Boîtier relais} pour l'électro-aimant
-	\item \textbf{Alimentation K.E.R.T.} : alimentation 4,5V \textbf{boîtier relais} et \textbf{électro-aimant}
+	\item \textbf{Alimentation K.E.R.T.} : alimentation 4.5V \textbf{boîtier relais} et \textbf{électro-aimant}
 \end{itemize}
 \end{block}
 \end{frame}
@@ -155,6 +155,17 @@ Dispositif autonome et compact conçu pour l'acquisition de données et le contr
 \end{columns}
 \end{frame}
 
+\begin{frame}
+\centering
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/ADAPOINT/main/GoldII_eng.pdf}{Documentation ADWinGold II}}}}	
+
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/ADAPOINT/main/GoldII_eng.pdf\#page=16}{Face avant ADWinGold II}}}}	
+
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/ADAPOINT/main/GoldII_eng.pdf\#page=21}{Brochage des DIOs}}}}
+
+\textcolor{blue}{\textbf{\underline{\href{https://raw.githubusercontent.com/fbuloup/ADAPOINT/main/GoldII_eng.pdf\#page=22}{Fig. 11 - CONF\_DIO(12) : configuration des DIOs}}}}	
+\end{frame}
+
 \begin{frame}{ADwin-Gold-II - Entrées / sorties digitales}
 \begin{columns}[c]
 \begin{column}{0.42\textwidth}
@@ -165,14 +176,14 @@ Dispositif autonome et compact conçu pour l'acquisition de données et le contr
 	\textcolor{magenta}{\textbf{Rose}} : sorties digitales
 \end{column}
 \begin{column}{0.58\textwidth}
-\begin{block}{Entrées digitales}
+\begin{block}{Entrées digitales (DIO15:00)}
 \scriptsize
 \begin{itemize}
 	\item Bit 0 : bouton poussoir niveau 1 (premier clic : pression faible)
 	\item Bit 1 : bouton poussoir niveau 2 (deuxième clic : pression forte)
 \end{itemize}
 \end{block}
-\begin{block}{Sorties digitales}
+\begin{block}{Sorties digitales (DIO31:16)}
 \scriptsize
 \begin{itemize}
 	\item Bit 0 : FarTarget External [FTE]
@@ -293,7 +304,7 @@ Interface de puissance entre les sorties digitales de l'ADwin (bits 0 à 3) et l
 \vspace{0.1cm}
 \begin{itemize}
 	\item 4 entrées de commande : G,H I et J
-	\item 1 alimentation : GND et + (4,5V)
+	\item 1 alimentation : GND et + (4.5V)
 	\item 6 sorties : A, B, C (ClosedTarget) et D, E F (FarTarget)
 \end{itemize}
 \vspace{0.1cm}
@@ -432,10 +443,10 @@ Sortie par cordons à fiches bananes.
 	4  & ADwin (AO)        & BIOPAC              & DB37 (orange clair) & Canal analogique n°6 \\
 	5  & ADwin (DO)        & BIOPAC              & DB25 (bleu clair)   & Bit 6 : external trigger \\
 	6  & ADwin (DO)        & Relais photodiodes  & Bananes             & Bits 0 à 3 $\rightarrow$ G, H, I, J \\
-	7  & Alim. AL 841B     & Relais photodiodes  & Bananes             & 4,5V : GND et + \\
+	7  & Alim. AL 841B     & Relais photodiodes  & Bananes             & 4.5V : GND et + \\
 	8  & Relais photodiodes& Cibles              & Bananes             & A, B, C et D, E, F \\
 	9  & ADwin (DO)        & Relais électro-aimant & Bananes           & Bit 5 $\rightarrow$ Cmde \\
-	10 & Alim. AL814B    & Relais électro-aimant & Bananes           & 4,5V $\rightarrow$ 5V \\
+	10 & Alim. AL814B    & Relais électro-aimant & Bananes           & 4.5V $\rightarrow$ 5V \\
 	11 & Alim. K.E.R.T.       & Electro-aimant & Bananes           & 0-15V \\
 	12 & Relais électro-aimant & Électro-aimant  & Bananes             & Sortie "Moteur" \\
 	\bottomrule
